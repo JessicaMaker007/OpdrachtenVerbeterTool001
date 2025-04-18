@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel oefeningen automatisch verbeteren</title>
+    <link rel="styleheet" href="styles.css"> 
+</head>
+<body>
+
+    <!--<div id="app"></div>
+    <script type="module" src="/src/main.js"></script>-->
+
+    <div class="container">
+        <h1>Opdrachten automatisch verbeteren</h1>
+
+        <h3>Bepaal eerst hoeveel sheets je wenst te controleren.</h3>
+
+        <label for="aantalSheets">Aantal sheets om te controleren:</label>
+        <input type="number" id="aantalSheets">
+
+        <br><br>
+        
+        <h3>Upload je Excel-bestanden</h3>
+
+        <label>Upload Excel met antwoorden student:</label>
+        <input type="file" id="uploadAntwoorden" />
+    
+        <br><br>
+
+        <label>Upload Excel-bestand met correcte antwoorden:</label>
+        <input type="file" id="uploadCorrect" />
+
+        <br><br>
+    <!--
+        <h3>Vul totaal aantal te behalen punten in.</h3>
+
+        <div id="nietLegeCellenOutput"></div>
+        <br>
+
+        <div id="behaaldeScoreOutput"></div>-->
+
+        <!-- <div class="score-input">
+            <label for="startGetal">Start Getal</label>
+            <input type="number" id="startGetal" placeholder="Voer start getal in">
+            <button id="berekenScoreButton">Bereken Score</button>
+            <p id="scoreResultaat"></p>
+        </div>-->
+
+        <h3>Druk op 
+        
+        <button id="vergelijkButton">Vergelijken</button> om de resultaten te kennen</h3>
+        
+        <div id="resultaatDiv" class="resultaatTekst"></div>
+
+        <div class="samenvatting">
+            <p id="samenvatting">Samenvatting van de resultaten komt hier...</p>
+        </div>
+
+        <button id="downloadVerbeterd">Download Verbeterd Excel</button>
+ 
+        <h3>Resultaat:</h3>
+        <pre id="resultaat"></pre>
+
+    </div>
+
+    <!-- Gebruik SheetJS via CDN -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>-->
+
+    <!-- Link naar je eigen script.js bestand -->
+    <!--<script type="module" src="script.js"></script>-->
+</body>
+    <script type="module" src="script.js"></script>
+</html>
